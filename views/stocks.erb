@@ -1,0 +1,18 @@
+
+
+<% if @company.nil? %>
+
+	<p> Sorry, that symbol was not found. Please <a class="btn btn-success " href="/stocks">try another</a> </p>
+
+
+<% else %>
+
+	<h3> <%=  " #{@s} latest price: $ #{@company.last}"%> </h3>
+
+	<p> Company name: <%= @company.company %> </p>
+	<p> Listed on: <%= @company.exchange %> </p>
+	<p> For Google Finance chart: <a href="http://google.com<%= @company.chart_url %>"> <%= "#{@company.company} charts"%> </a></p>
+
+
+
+<% end %>

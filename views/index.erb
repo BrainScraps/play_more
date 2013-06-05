@@ -1,0 +1,53 @@
+
+
+	<ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#movies" data-toggle="tab">Movies</a></li>
+              <li><a href="#stocks" data-toggle="tab">Stocks</a></li>
+              <li><a href="#images" data-toggle="tab">Images</a></li>
+              
+    </ul>
+	<div id="myTabContent" class="tab-content">
+      <div class="tab-pane fade in active" id="movies">
+        <p>Please use the search box below to ask IMDB about a movie: </p>
+
+        <form>
+
+        	<input id="moviebox"type="text">
+        	<button id="moviebtn" class="btn btn-success"> Search </button>
+        </form>
+
+      </div>
+      <div class="tab-pane fade" id="stocks">
+        <p>Please enter a stock symbol and we'll give you a quote!</p>
+
+        <form>
+
+        	<input id="stocksbox" type="text">
+        	<button id="stocksbtn" class="btn btn-success"> Search </button>
+        </form>
+
+      </div>
+      <div class="tab-pane fade" id="images">
+        <p>Please enter a search term and we'll find a random image: </p>
+
+        <form>
+
+        	<input id="imagebox" type="text">
+        	<button id="imagebtn" class="btn btn-success"> Search </button>
+        </form>
+      </div>
+
+    </div>
+
+    <div id="mymodal" class="modal hide fade">
+		  <div class="modal-header">
+		    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		    <h3 id="modalhead">Your Search Results</h3>
+		  </div>
+		  <div id="modalbod" class="modal-body">
+		    
+		  </div>
+		  <div class="modal-footer">
+		    <a href="#" data-dismiss="modal" class="btn">Close</a>
+		  </div>
+	</div>

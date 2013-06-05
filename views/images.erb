@@ -1,0 +1,16 @@
+
+
+
+<% if @src.nil? %>
+
+	<p> Sorry, that symbol was not found. Please <a class="btn btn-success " href="/images">try another</a> </p>
+
+
+<% else %>
+
+	<h3> You asked for it! A random image of "<%= @q %>" </h3>
+
+		<img src="<%= @src %>" alt="an image pertaining to <%= @q %>">
+
+
+<% end %>
